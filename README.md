@@ -166,3 +166,7 @@ Criar badges de cobertura de código (CodeCov)
 
 Rafael Dos Santos Vicente
 📌 GitHub: @RafaelSV9
+
+🏁 Conclusão
+
+Este projeto demonstra como o GitHub Copilot pode atuar como um parceiro de programação, acelerando entregas, aumentando a clareza do código e melhorando a experiência de estudo e desenvolvimento.
