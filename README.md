@@ -1,121 +1,168 @@
-Resolvendo Códigos em Python com GitHub Copilot
+📌 Resolvendo Códigos em Python com GitHub Copilot
 
-Este repositório foi desenvolvido como parte do desafio “Resolvendo Códigos em Python com o GitHub Copilot”, da Digital Innovation One (DIO).
-O objetivo é demonstrar, na prática, como o GitHub Copilot pode auxiliar na escrita, refatoração, documentação e testes de algoritmos em Python, aumentando significativamente a produtividade.
 
-🎯 Objetivos do Projeto
 
-Aplicar algoritmos básicos e intermediários em Python.
 
-Demonstrar o uso real do GitHub Copilot no processo de desenvolvimento.
 
-Organizar o código de forma modular e escalável.
 
-Utilizar testes automatizados para validar as implementações.
 
-Documentar todo o raciocínio técnico e boas práticas.
 
-Versionar o projeto no GitHub com um repositório limpo, claro e bem estruturado.
+Este projeto foi desenvolvido como parte do desafio “Resolvendo Códigos em Python com GitHub Copilot” da Digital Innovation One (DIO).
+O objetivo é demonstrar, na prática, como o GitHub Copilot pode auxiliar no desenvolvimento de algoritmos em Python, sugerindo soluções, acelerando a escrita de código e ajudando a aplicar boas práticas de programação.
 
-📁 Estrutura do Projeto
+🔥 Visão Geral do Projeto
+
+O repositório apresenta:
+
+✔ Um conjunto de algoritmos fundamentais desenvolvidos com apoio do Copilot
+✔ Um menu interativo para execução dos algoritmos
+✔ Testes automatizados com pytest
+✔ Documentação completa, incluindo decisões técnicas e melhorias futuras
+✔ Código limpo, modularizado e com type hints modernos
+
+🧠 Tecnologias e Ferramentas Utilizadas
+
+Python 3.10+
+
+GitHub Copilot (autocompletar, sugestões, docstrings e testes)
+
+Pytest para validações automatizadas
+
+Git & GitHub para versionamento
+
+Boas práticas de Clean Code + type hints
+
+📁 Estrutura do Repositório
 resolvendo-codigos-python-com-github-copilot/
 ├── src/
-│   ├── algorithms.py          # Módulo com todos os algoritmos do projeto
-│   └── main.py                # Menu interativo para execução dos algoritmos
+│   ├── algorithms.py          # Funções e algoritmos principais
+│   └── main.py                # Aplicação CLI para rodar os algoritmos
 ├── tests/
-│   └── test_algorithms.py     # Testes automatizados com pytest
+│   └── test_algorithms.py     # Testes automatizados
 ├── requirements.txt           # Dependências do projeto
-└── README.md                  # Este arquivo
+└── README.md                  # Documentação completa
 
-🧠 Algoritmos Implementados
+🧩 Algoritmos Implementados
 
-Os seguintes algoritmos foram desenvolvidos com o apoio do GitHub Copilot:
+Os seguintes algoritmos foram criados ou otimizados utilizando o GitHub Copilot como pair programmer:
 
-Função	Descrição
-soma_numeros_pares	Soma apenas os números pares de uma lista.
-eh_palindromo	Verifica se uma string é um palíndromo, ignorando formatação.
-contagem_caracteres	Conta a frequência de cada caractere de um texto.
-fibonacci	Gera uma sequência de Fibonacci de tamanho N.
-ordenar_numeros	Ordena uma lista de números inteiros.
+🔹 soma_numeros_pares(lista)
 
-Todas as funções possuem docstrings, exemplos e foram implementadas com boas práticas.
+Retorna a soma de todos os números pares de uma lista.
 
-🚀 Execução do Projeto
-1️⃣ Clonar o repositório
-git clone https://github.com/SEU_USUARIO/resolvendo-codigos-python-com-github-copilot.git
+🔹 eh_palindromo(texto)
+
+Verifica se uma string é palíndromo, ignorando espaços e pontuações.
+
+🔹 contagem_caracteres(texto)
+
+Cria um dicionário com a frequência de cada caractere na string.
+
+🔹 fibonacci(n)
+
+Gera os n primeiros termos da sequência de Fibonacci.
+
+🔹 ordenar_numeros(lista)
+
+Ordena os números em ordem crescente.
+
+Todos incluem type hints, docstrings e exemplos.
+
+🚀 Como Executar o Projeto
+1️⃣ Clone o repositório
+git clone https://github.com/SEU-USUARIO/resolvendo-codigos-python-com-github-copilot.git
 cd resolvendo-codigos-python-com-github-copilot
 
-2️⃣ Criar ambiente virtual (opcional, recomendado)
+2️⃣ (Opcional) Criar ambiente virtual
 python -m venv .venv
-source .venv/bin/activate  # Linux/macOS
-# .venv\Scripts\activate (Windows)
+source .venv/bin/activate   # Linux/macOS
+# .venv\Scripts\activate    # Windows
 
 3️⃣ Instalar dependências
 pip install -r requirements.txt
 
-4️⃣ Rodar o projeto
+4️⃣ Rodar o menu principal
 python -m src.main
 
 🧪 Testes Automatizados
 
-O projeto inclui testes criados com o apoio do Copilot.
+Os testes foram gerados com ajuda do Copilot e cobrem os principais casos das funções.
 
-Para executá-los:
-
+Executar os testes:
 pytest -v
 
 
-Os testes incluem:
+Exemplos verificados:
 
-Casos simples
+Soma correta dos números pares
 
-Casos edge
+Palíndromos com e sem espaços
 
-Comportamento esperado das funções
+Frequência de caracteres
 
-Isso deixa seu projeto muito mais profissional.
+Sequência de Fibonacci
 
-🤖 Como o GitHub Copilot foi utilizado
+Ordenação correta de inteiros
 
-Durante o desenvolvimento, o Copilot ajudou em:
+🤖 Como o GitHub Copilot foi Utilizado
 
-Geração de trechos de lógica para algoritmos.
+O Copilot contribuiu em diversas etapas:
 
-Sugestões de docstrings e exemplos.
+✨ Sugestão de códigos iniciais
 
-Autocomplete inteligente para listas, loops e condicionais.
+Estrutura das funções
 
-Criação de casos de testes no pytest.
+Comandos simples e loops
 
-Melhoria da formatação e limpeza do código.
+Padrões Pythonic
 
-Todo código gerado foi revisado, ajustado e adaptado antes de ser incluído no repositório.
+✨ Geração de docstrings e exemplos
 
-🧩 Decisões Técnicas
+Documentação clara e padronizada
 
-Python 3.10+ com type hints modernos.
+Explicação automática dos algoritmos
 
-Modularização para manter código organizado.
+✨ Criação de testes automatizados
 
-Simplicidade no design, focado em clareza.
+Casos de teste mais completos
 
-Inclusão de testes automatizados (boa prática profissional).
+Detecção automática de edge cases
 
-Código 100% compatível com ferramentas de CI/CD (ex.: GitHub Actions).
+✨ Refatorações
 
-✨ Possíveis Melhorias Futuras
+Melhoria da legibilidade
 
-Interface gráfica com Tkinter.
+Simplificação da lógica
 
-API REST com FastAPI.
+Redução de duplicação
 
-Mais desafios e algoritmos avançados.
+Todo o código foi revisado e ajustado manualmente, garantindo qualidade e clareza.
 
-Deploy em nuvem (Render / Railway).
+🧠 Decisões Técnicas
 
-Dashboard web com Streamlit.
+Modularização para facilitar manutenção
 
-👨‍💻 Autor
+Type hints para tornar o código mais legível
 
-Rafael Vicente
-📌 GitHub: RafaelSV
+Uso de testes como boa prática profissional
+
+Estrutura compatível com futuros upgrades (API, GUI, Web)
+
+🚀 Possíveis Melhorias Futuras
+
+Adicionar interface web com Flask ou FastAPI
+
+Criar dashboard com Streamlit
+
+Gerar documentação automática via Sphinx
+
+Adicionar novos algoritmos avançados
+
+Configurar GitHub Actions (CI/CD) para testes automáticos
+
+Criar badges de cobertura de código (CodeCov)
+
+👤 Autor
+
+Rafael Dos Santos Vicente
+📌 GitHub: @RafaelSV9
