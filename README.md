@@ -1,0 +1,1 @@
+# resolvendo-codigos-python-com-github-copilot
